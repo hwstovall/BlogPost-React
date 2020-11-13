@@ -13,10 +13,13 @@ const Navigation = () => (
         <li>
           <Link className="link ml-4" to={ROUTES.BLOG}>Blog</Link>
         </li>
+        <li>
+          <Link className="link ml-4" to={ROUTES.NEWBLOG}>NewBlog</Link>
+        </li>
       </ul> 
       <ul className="d-flex justify-content-end link mr-4">
         <li>
-            <Link className="link mr-4" to={ROUTES.SIGN_UP}>Sign Up</Link>
+            <Link className="link mr-4" to={ROUTES.SIGN_UP}>SignUp</Link>
           </li>
         <li> 
           <Link className="link mr-4" to={ROUTES.SIGN_IN}>Login</Link>
