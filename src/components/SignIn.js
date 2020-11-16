@@ -19,7 +19,7 @@ const SignIn = () => {
       setError("")
       setLoading(true)
        await login(emailRef.current.value, passwordRef.current.value)
-       history.push("/NewBlog")
+       history.push("/createBlog")
     } catch {
       setError("Failed to login")
     }

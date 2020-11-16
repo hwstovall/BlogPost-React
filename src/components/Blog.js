@@ -1,6 +1,5 @@
 import React, {Component, Fragment} from 'react';
-import { Button } from 'react-bootstrap';
-import { Card, CardImg, CardBody, CardTitle, CardSubtitle, Badge} from "reactstrap";
+import { Card, CardImg } from "react-bootstrap";
 import '../App.css';
 import {postsDb} from '../firebase'
 
@@ -19,34 +18,33 @@ class BlogPage extends Component {
             this.setState({postsList: postlist})
         })
     }
-    // componentWillUnmount(){
-    //     postsDb.ref().posts().off();
-    // }
 
 render(){
     return(
     <Fragment>
-        <div className="container" data-spy="scroll">
+        <div className="container">
             <h1 className="text-center">My Blogs</h1>
-                {this.state.postsList.map(post =>(
+            {this.state.postsList.map(post =>(
                 <Card className="article-card">  
-                    <CardImg className="card-image" 
-                        top
+                    <CardImg className="card-image-top" 
                         width="100%"
-                        src="https://placeimg.com/325/180/animals"
-                        alt="Card Image"
+                        src={post.url}
+                        alt="blogPicture"
                     />
-                <CardBody className="card-body">
-                    <CardTitle className="card-title" key={post.title}>
-                        Title: {post.title}
-                    </CardTitle>
-                    <CardSubtitle className="card-sub-title" key={post.description}>
-                        <Badge className="article-label">
-                            Topic: {post.description}
-                        </Badge>
-                        <Button>Read More...</Button>
-                    </CardSubtitle>
-                </CardBody>     
+                <Card.Body className="card-body">
+                    <Card.Title className="card-title" key={post.title}>
+                           Title: {post.title}
+                    </Card.Title>
+                    <Card.Text className="card-text" key={post.description}>
+                            Description: {post.description}
+                    </Card.Text>
+                    <Card.Text className="card-text" key={post.author}>
+                            Author: {post.author}
+                    </Card.Text>
+                    <Card.Text className="card-text" key={post.publish}>
+                            Publish: {post.publish}
+                    </Card.Text>
+                </Card.Body>     
             </Card>
                ))}; 
         </div>

@@ -5,7 +5,7 @@ class Footer extends Component {
   
     render() { 
         return ( 
-            <div className="footer mt-2 pt-2">
+            <div className=" mt-2 pt-4 pb-4">
                <p>© Copyright Sintu 2020-2021</p>
             </div>
             

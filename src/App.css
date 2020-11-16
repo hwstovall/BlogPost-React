@@ -1,6 +1,7 @@
 body{
    background-image: url("images/aa.png");
-   background-repeat: no-repeat;  
+   background-repeat: no-repeat;
+   background-size: cover;  
 }
 *{
     box-sizing: border-box;
@@ -10,7 +11,8 @@ body{
     position: fixed; 
     top: 0; 
     width: 100%;
-    background-color: black;  
+    background-color: black; 
+    text-transform: uppercase;
   }
 .link{
     color: goldenrod;
@@ -35,12 +37,12 @@ h2, span{
     font-weight: bold;
 }
 .home{
-    position: absolute;
-    margin-left: 320px;
-    margin-top: 20px;
+    position: relative;
+    margin-top: 80px;
     padding: 50px;
     color: goldenrod;
     background: rgba(0, 0, 0, 0.5);
+  
 }
 .home a{
     padding: 15px 20px;
@@ -54,6 +56,9 @@ h2, span{
     color: #333;
     background-color:  goldenrod;
 }
+.contact a{
+    padding: 4px 2px;
+}
 .auth{
     margin: 0 auto;
 }
@@ -65,16 +70,6 @@ h2, span{
 .card-image{
     max-height:  180px;
 }
-.card-title{
-    font-size: 16px;
-    height: 45px;
-    text-overflow: ellipsis;
-}
-.card-sub-title{
-    font-size: 12px;
-    color: #7b858e;
-}
-
 .article-label{
     padding: 5px 10px 5px 10px;
 }
@@ -82,9 +77,10 @@ h2, span{
     padding-bottom: 20px;
 }
  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position: fixed; 
+    overflow: hidden;
+     left: 0; 
+    bottom: 0; 
     width: 100%;
     background-color: black;
     text-align: center;
