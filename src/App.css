@@ -1,7 +1,6 @@
 body{
    background-image: url("images/aa.png");
    background-repeat: no-repeat;
-   background-size: cover;  
 }
 *{
     padding: 0;
@@ -12,9 +11,7 @@ body{
     min-height: 80vh;
 }
 .navbar {
-    position: fixed; 
     height: 10vh;
-    top: 0; 
     width: 100%;
     background-color: black; 
     text-transform: uppercase;
@@ -78,12 +75,10 @@ h2, span{
 .article-label{
     padding: 5px 10px 5px 10px;
 }
-.new-post{
-    padding-bottom: 20px;
-}
+
  footer {
-    
     width: 100%;
+    position: sticky;
     height: 10vh;
     background-color: black;
     text-align: center;

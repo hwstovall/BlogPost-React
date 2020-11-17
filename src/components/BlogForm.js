@@ -77,7 +77,7 @@ const handleFileChange = async (e) => {
 
   return (
     <Fragment>
-    <div className="container" data-spy="scroll">
+    <div className="container">
       <Card className="article-card">
            <h1 className="text-center">Create Your New Blog</h1>
           <Card.Body>

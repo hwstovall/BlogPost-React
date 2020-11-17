@@ -13,7 +13,7 @@ export default function Signup() {
   const [loading, setLoading] = useState(false)
   const history = useHistory()
 
-  async function handleSubmit(e) {
+function handleSubmit(e) {
       
     e.preventDefault()
 
@@ -24,7 +24,7 @@ export default function Signup() {
     try {
       setError("")
       setLoading(true)
-     const user =  await signup(emailRef.current.value, passwordRef.current.value)
+      signup(emailRef.current.value, passwordRef.current.value)
     
        history.push("/createBlog")
     } catch {

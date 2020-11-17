@@ -22,12 +22,12 @@ const Navigation = () => {
           <Link className="link ml-4" to={ROUTES.CREATE_BLOG}>CreateBlog</Link>
         </li>
       </ul> 
-      <ul className="d-flex justify-content-end link mr-4">
+      <ul>
           { currentUser ?  
           <li> 
             <Link className="link mr-4" onClick={logout}>LogOut</Link>
           </li> :
-            <div>
+            <div className="d-flex justify-content-end link mr-4">
                 <li>
                     <Link className="link mr-4" to={ROUTES.SIGN_UP}>SignUp</Link>
                   </li>
