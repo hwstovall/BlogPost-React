@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/BlogPost-React/static/css/main.d92f99eb.chunk.css",
+    "main.js": "/BlogPost-React/static/js/main.eb75f57d.chunk.js",
+    "main.js.map": "/BlogPost-React/static/js/main.eb75f57d.chunk.js.map",
+    "runtime-main.js": "/BlogPost-React/static/js/runtime-main.c69fb710.js",
+    "runtime-main.js.map": "/BlogPost-React/static/js/runtime-main.c69fb710.js.map",
+    "static/css/2.1a02f21c.chunk.css": "/BlogPost-React/static/css/2.1a02f21c.chunk.css",
+    "static/js/2.171ab520.chunk.js": "/BlogPost-React/static/js/2.171ab520.chunk.js",
+    "static/js/2.171ab520.chunk.js.map": "/BlogPost-React/static/js/2.171ab520.chunk.js.map",
+    "index.html": "/BlogPost-React/index.html",
+    "static/css/2.1a02f21c.chunk.css.map": "/BlogPost-React/static/css/2.1a02f21c.chunk.css.map",
+    "static/css/main.d92f99eb.chunk.css.map": "/BlogPost-React/static/css/main.d92f99eb.chunk.css.map",
+    "static/js/2.171ab520.chunk.js.LICENSE.txt": "/BlogPost-React/static/js/2.171ab520.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/BlogPost-React/static/media/aa.f77f4b98.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c69fb710.js",
+    "static/css/2.1a02f21c.chunk.css",
+    "static/js/2.171ab520.chunk.js",
+    "static/css/main.d92f99eb.chunk.css",
+    "static/js/main.eb75f57d.chunk.js"
+  ]
+}
