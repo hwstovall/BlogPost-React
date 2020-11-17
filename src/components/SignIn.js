@@ -28,6 +28,7 @@ const SignIn = () => {
   
     return (
     <Fragment>
+    <div className="container">
         <Card className="auth" style={{maxWidth: "400px"}}>
             <Card.Body className="w-100">
                 <h2 className="text-center mb-4">Sign In</h2>
@@ -51,6 +52,7 @@ const SignIn = () => {
                     Don't have an account?<Link to={ROUTES.SIGN_UP}><span>Sign Up</span></Link>
                 </div>
         </Card>
+        </div>
     </Fragment> 
     )  
 }

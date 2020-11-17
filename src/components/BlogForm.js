@@ -1,4 +1,4 @@
-import React, { Fragment, useState} from "react"
+import React, { Fragment} from "react"
 import { Card, Form, Button} from "react-bootstrap"
 import { postsDb } from '../firebase'
 import {storage} from '../firebase'
@@ -31,7 +31,6 @@ const addBlog = obj => {
 }
 const updateBlog =  (obj) => {
 
-  console.log(obj)
  postsDb.ref('posts').child(currentPostKey).update({...obj})
  setBlogObject({...obj})
 
@@ -45,7 +44,8 @@ const handleFormSubmit = e => {
       alert("Missing Values")
 
     }else{
-      values.date = Date(Date.now())
+      const date = new Date()
+      values.date = (date.getMonth() + 1 ) + "-" + date.getDate() + "-" + date.getFullYear()
       if(currentPostKey){
         updateBlog(values)
 

@@ -36,6 +36,7 @@ export default function Signup() {
     return (
       
         <Fragment>
+        <div className="container">
             <Card className="auth" style={{maxWidth: "400px"}}>
                 <Card.Body className="w-100">
                         <h2 className="text-center mb-4">Sign Up</h2> 
@@ -62,7 +63,8 @@ export default function Signup() {
                     <div className="w-100 text-center mt-2 mb-4">
                         Already have an account ? <Link to={ROUTES.SIGN_IN}><span>Sign In</span></Link>
                     </div>
-                </Card>        
+                </Card> 
+            </div>       
         </Fragment>
     )
 }

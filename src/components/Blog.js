@@ -24,6 +24,7 @@ render(){
     <Fragment>
         <div className="container">
             <h1 className="text-center">My Blogs</h1>
+            <div className="d-flex flex-wrap">
             {this.state.postsList.map(post =>(
                 <Card className="article-card">  
                     <CardImg className="card-image-top" 
@@ -42,11 +43,12 @@ render(){
                             Author: {post.author}
                     </Card.Text>
                     <Card.Text className="card-text" key={post.publish}>
-                            Publish: {post.publish}
+                            Date: {post.date}
                     </Card.Text>
                 </Card.Body>     
             </Card>
                ))}; 
+        </div>
         </div>
      </Fragment>
 ) 
