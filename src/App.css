@@ -75,6 +75,9 @@ h2, span{
 .article-label{
     padding: 5px 10px 5px 10px;
 }
+i{
+    font-weight: bold;
+}
 
  footer {
     width: 100%;

@@ -50,10 +50,10 @@ if (currentUser){
                                               src= {blogObject.url}
                                               alt="blogPicture"
                                         />
-                                        <Card.Title>Title: {blogObject.title}</Card.Title>
-                                        <Card.Text>Description: {blogObject.description}</Card.Text>
-                                        <Card.Text>Author: {blogObject.author}</Card.Text>
-                                        <Card.Text>Date: {blogObject.date}</Card.Text>
+                                        <Card.Title><i>Title:</i> {blogObject.title}</Card.Title>
+                                        <Card.Text><i>Description:</i> {blogObject.description}</Card.Text>
+                                        <Card.Text><i>Author: </i>{blogObject.author}</Card.Text>
+                                        <Card.Text><i>Date: </i>{blogObject.date}</Card.Text>
                                         <Button className="btn-primary" onClick={() => setValues({...blogObject})}>Update</Button>
                                         <Button className="btn-danger ml-2" onClick={() => deleteBlog()}>Delete</Button>
                                   </Card.Body>

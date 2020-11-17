@@ -34,16 +34,16 @@ render(){
                     />
                 <Card.Body className="card-body">
                     <Card.Title className="card-title" key={post.title}>
-                           Title: {post.title}
+                           <i>Title:</i>{post.title}
                     </Card.Title>
                     <Card.Text className="card-text" key={post.description}>
-                            Description: {post.description}
+                            <i>Description:</i> {post.description}
                     </Card.Text>
                     <Card.Text className="card-text" key={post.author}>
-                            Author: {post.author}
+                            <i>Author: </i>{post.author}
                     </Card.Text>
                     <Card.Text className="card-text" key={post.publish}>
-                            Date: {post.date}
+                            <i>Date: </i>{post.date}
                     </Card.Text>
                 </Card.Body>     
             </Card>
