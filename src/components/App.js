@@ -25,7 +25,7 @@ function App() {
                 <Route path={ROUTES.SIGN_UP} component={SignUp} /> 
                 <Route path={ROUTES.SIGN_IN} component={SignIn} />               
           </Switch>
-            <Footer/>      
+            <Footer/> 
         </HashRouter>
       </AuthProvider>
   )

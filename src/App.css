@@ -1,7 +1,11 @@
+
 body{
    background-image: url("images/aa.png");
    background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
 }
+
 *{
     padding: 0;
     margin: 0;
@@ -9,7 +13,9 @@ body{
 }
 .container{
     min-height: 80vh;
+    
 }
+
 .navbar {
     height: 10vh;
     width: 100%;
@@ -31,7 +37,6 @@ body{
 }
 h1{
     font-family: "Lucida Console", Courier, monospace;
-    font-size: 1.7rem;
     font-weight: bold;
 }
 h2, span{

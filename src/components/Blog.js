@@ -22,7 +22,7 @@ class BlogPage extends Component {
 render(){
     return(
     <Fragment>
-        <div className="container">
+        <div className="container blog">
             <h1 className="text-center">My Blogs</h1>
             <div className="d-flex flex-wrap">
             {this.state.postsList.map(post =>(
@@ -48,7 +48,7 @@ render(){
                 </Card.Body>     
             </Card>
                ))}; 
-        </div>
+    </div>
         </div>
      </Fragment>
 ) 

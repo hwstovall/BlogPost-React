@@ -10,7 +10,7 @@ class Home extends Component {
         return ( 
             
             <div className="container text-center">
-                <div className="home">
+                <div className="home mt-4">
                     <div >
                         <h1 className="text-center ">Welcome to our Blog Site!!</h1>
                         <a href="mailTo:sinte@gmail.com" style={{textDecoration: "none"}}>GET IN TOUCH!</a>

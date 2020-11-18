@@ -37,7 +37,7 @@ function handleSubmit(e) {
       
         <Fragment>
         <div className="container">
-            <Card className="auth" style={{maxWidth: "400px"}}>
+            <Card className="auth mt-4" style={{maxWidth: "400px"}}>
                 <Card.Body className="w-100">
                         <h2 className="text-center mb-4">Sign Up</h2> 
                         {error && <Alert variant="danger">{error}</Alert>}    

@@ -10,7 +10,7 @@ const Navigation = () => {
   console.log("current user in navigation", currentUser)
   return (
 
-  <div className="navbar mb-4">
+  <div className="navbar">
       <ul className="d-flex justify-content-start link">
         <li>
           <Link className="link mr-2 active" to={ROUTES.HOME}>Home</Link>
