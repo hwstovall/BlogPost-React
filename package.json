@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "homepage": " https://24sint.github.io/BlogPost-React/",
-=======
-  "homepage": "https://24sint.github.io/BlogPost-React",
->>>>>>> 4c906fa548fca130e9a5d2d3cb142316b2074475
+  "homepage": "https://24sint.github.io",
   "name": "blog-post",
   "version": "0.1.0",
   "private": true,
