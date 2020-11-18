@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router,Route, Switch} from 'react-router-dom';
+import { HashRouter ,Route, Switch} from 'react-router-dom';
  
 import Navigation from './Navigation';
 import Home from './Home';
@@ -16,7 +16,7 @@ import { AuthProvider } from '../contexts/AuthContext';
 function App() {
   return (
       <AuthProvider>
-        <Router>
+        <HashRouter>
             <Navigation/>
             <Switch>
                 <Route exact path={ROUTES.HOME} component={Home}/>
@@ -26,7 +26,7 @@ function App() {
                 <Route path={ROUTES.SIGN_IN} component={SignIn} />               
           </Switch>
             <Footer/>      
-        </Router>
+        </HashRouter>
       </AuthProvider>
   )
 }
