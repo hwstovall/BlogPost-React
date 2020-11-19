@@ -5,8 +5,6 @@ import { postsDb } from '../firebase';
 import {useAuth} from '../contexts/AuthContext';
 import { useHistory } from "react-router-dom"
 
-
-
 const NewBlogPage = () => {
   const initialFiledValues = { 
     title: '',
@@ -22,6 +20,7 @@ const history = useHistory();
 const deleteBlog =  () => {
   if(window.confirm("Are you sure to delete this record?")){
       postsDb.ref('posts').child(currentPostKey).remove()
+        setBlogObject({})
       }     
   }
    
