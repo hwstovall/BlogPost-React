@@ -7,7 +7,6 @@ import {useAuth} from '../contexts/AuthContext';
  
 const Navigation = () => {
   const {currentUser, logout} = useAuth();
-  console.log("current user in navigation", currentUser)
   return (
 
   <div className="navbar">

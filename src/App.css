@@ -5,7 +5,9 @@ body{
    background-size: cover;
    background-attachment: fixed;
 }
-
+#root{
+    overflow: hidden;
+}
 *{
     padding: 0;
     margin: 0;

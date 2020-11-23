@@ -26,7 +26,7 @@ const handleInputChange = e => {
 const addBlog = obj => {
  
   postsDb.ref().child('posts').push(obj).then(res => setCurrentPostKey(res.key))
-  setBlogObject({...obj})
+   setBlogObject({...obj})
 
 }
 const updateBlog =  (obj) => {
@@ -35,7 +35,6 @@ const updateBlog =  (obj) => {
  setBlogObject({...obj})
 
 }
-
 
 const handleFormSubmit = e => {
     e.preventDefault();
@@ -53,7 +52,6 @@ const handleFormSubmit = e => {
         addBlog(values)
       }   
     setValues({...initialFiledValues})
-    console.log(e.target[3])
 
 }
 

@@ -21,6 +21,7 @@ const deleteBlog =  () => {
   if(window.confirm("Are you sure to delete this record?")){
       postsDb.ref('posts').child(currentPostKey).remove()
         setBlogObject({})
+        setCurrentPostKey("")
       }     
   }
    

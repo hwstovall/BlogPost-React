@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import { Card, CardImg } from "react-bootstrap";
 import '../App.css';
-import {postsDb} from '../firebase'
+import { postsDb } from '../firebase'
 
 class BlogPage extends Component {
 
@@ -18,8 +18,12 @@ class BlogPage extends Component {
             this.setState({postsList: postlist})
         })
     }
+    componentWillUnmount(){
+        postsDb.ref('posts').off()
+    }
 
 render(){
+   
     return(
     <Fragment>
         <div className="container blog">
