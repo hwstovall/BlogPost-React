@@ -25,7 +25,7 @@ const handleInputChange = e => {
 
 const addBlog = obj => {
  
-  postsDb.ref().child('posts').push(obj).then(res => setCurrentPostKey(res.key))
+  postsDb.ref().child('posts').push(obj)
    setBlogObject({...obj})
 
 }

@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import { Card, CardImg } from "react-bootstrap";
 import '../App.css';
-import { postsDb } from '../firebase'
+import { postsDb } from '../firebase';
 
 class BlogPage extends Component {
 
@@ -12,8 +12,9 @@ class BlogPage extends Component {
     componentDidMount(){
        postsDb.ref('posts').on("value", snapshot => {
             let postlist = [];
-            snapshot.forEach(snap =>{
+            snapshot.forEach(snap => {
                 postlist.push(snap.val());
+               
             })
             this.setState({postsList: postlist})
         })
@@ -29,8 +30,8 @@ render(){
         <div className="container blog">
             <h1 className="text-center">My Blogs</h1>
             <div className="d-flex flex-wrap">
-            {this.state.postsList.map(post =>(
-                <Card className="article-card">  
+            {this.state.postsList.map(post => (
+                <Card className="article-card" key={post}>  
                     <CardImg className="card-image-top" 
                         width="100%"
                         src={post.url}
